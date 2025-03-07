@@ -18,7 +18,6 @@ const config = {
                 throw new Error(message);
             }
         }
-        // Removed invalid trailingSlash configuration
     },
     preprocess: vitePreprocess()
 };

@@ -4,16 +4,12 @@
     "builds": [
         {
             "src": "package.json",
-            "use": "@vercel/node",
-            "config": {
-                "buildCommand": "npm run build",
-                "outputDirectory": ".vercel/output"
-            }
+            "use": "@sveltejs/adapter-vercel"
         }
     ],
     "routes": [
         {
-            "src": "/(.*)",
+            "src": "/[^.]+",
             "dest": "/"
         }
     ],
