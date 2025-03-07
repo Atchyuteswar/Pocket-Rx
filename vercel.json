@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "framework": "sveltekit",
+    "builds": [
+        {
+            "src": "package.json",
+            "use": "@vercel/node",
+            "config": {
+                "buildCommand": "npm run build",
+                "outputDirectory": ".vercel/output"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/"
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ],
+    "env": {
+        "NODE_ENV": "production"
+    },
+    "cleanUrls": true
+}
