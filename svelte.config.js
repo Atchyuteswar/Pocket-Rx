@@ -1,25 +1,17 @@
 import adapter from '@sveltejs/adapter-vercel';
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    kit: {
-        adapter: adapter({
-            // Use Edge runtime for better performance
-            runtime: 'edge',
-            // Include all paths in the lambda function
-            regions: ['iad1'],
-            // Ensure all routes are properly handled
-            externals: []
-        }),
-        prerender: {
-            handleHttpError: ({ path, referrer, message }) => {
-                if (path === '/not-found') return;
-                throw new Error(message);
-            }
-        }
-    },
-    preprocess: vitePreprocess()
+	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
+	// for more information about preprocessors
+	preprocess: vitePreprocess(),
+
+	kit: {
+		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		adapter: adapter()
+	}
 };
 
 export default config;

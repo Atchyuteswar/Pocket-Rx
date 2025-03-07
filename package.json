@@ -50,6 +50,7 @@
 		"@emailjs/browser": "^4.4.1",
 		"@google/generative-ai": "^0.24.0",
 		"@prisma/client": "^6.4.1",
+		"@sveltejs/adapter-vercel": "^3.0.0",
 		"@types/bcryptjs": "^2.4.6",
 		"@types/jsonwebtoken": "^9.0.9",
 		"aos": "^2.3.4",
