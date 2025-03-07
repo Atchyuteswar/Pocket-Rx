@@ -17,14 +17,7 @@
             "dest": "/"
         }
     ],
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ],
     "env": {
         "NODE_ENV": "production"
-    },
-    "cleanUrls": true
+    }
 }

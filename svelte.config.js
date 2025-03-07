@@ -17,9 +17,8 @@ const config = {
                 if (path === '/not-found') return;
                 throw new Error(message);
             }
-        },
-        // Add trailingSlash configuration to handle URL formats consistently
-        trailingSlash: 'never'
+        }
+        // Removed invalid trailingSlash configuration
     },
     preprocess: vitePreprocess()
 };
