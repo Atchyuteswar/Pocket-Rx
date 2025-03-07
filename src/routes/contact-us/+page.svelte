@@ -373,7 +373,7 @@
                     <h3 class="mb-4 text-xl font-semibold text-[#00203F]">Connect With Us</h3>
                     <div class="flex space-x-4">
                         <a
-                            href="#"
+                            href="https://twitter.com/pocketrx"
                             class="flex h-10 w-10 items-center justify-center rounded-full bg-[#00203F]/10 transition-all hover:bg-[#00203F] hover:text-white"
                             aria-label="Twitter"
                         >
@@ -384,7 +384,7 @@
                             </svg>
                         </a>
                         <a
-                            href="#"
+                            href="https://facebook.com/pocketrx"
                             class="flex h-10 w-10 items-center justify-center rounded-full bg-[#00203F]/10 transition-all hover:bg-[#00203F] hover:text-white"
                             aria-label="Facebook"
                         >
@@ -395,7 +395,7 @@
                             </svg>
                         </a>
                         <a
-                            href="#"
+                            href="https://instagram.com/pocketrx"
                             class="flex h-10 w-10 items-center justify-center rounded-full bg-[#00203F]/10 transition-all hover:bg-[#00203F] hover:text-white"
                             aria-label="Instagram"
                         >
@@ -406,7 +406,7 @@
                             </svg>
                         </a>
                         <a
-                            href="#"
+                            href="https://linkedin.com/company/pocketrx"
                             class="flex h-10 w-10 items-center justify-center rounded-full bg-[#00203F]/10 transition-all hover:bg-[#00203F] hover:text-white"
                             aria-label="LinkedIn"
                         >

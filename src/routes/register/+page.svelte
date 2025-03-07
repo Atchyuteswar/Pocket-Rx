@@ -64,8 +64,9 @@
         <form on:submit|preventDefault={handleSubmit} class="space-y-6">
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Email</label>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
                     <input 
+                        id="email"
                         type="email" 
                         bind:value={formData.email} 
                         required 
@@ -74,8 +75,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Password</label>
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
                     <input 
+                        id="password"
                         type="password" 
                         bind:value={formData.password} 
                         required 
@@ -84,8 +86,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
                     <input 
+                        id="fullName"
                         type="text" 
                         bind:value={formData.name} 
                         required 
@@ -94,8 +97,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Date of Birth</label>
+                    <label for="dateOfBirth" class="block text-sm font-medium text-gray-700">Date of Birth</label>
                     <input 
+                        id="dateOfBirth"
                         type="date" 
                         bind:value={formData.dateOfBirth} 
                         required 
@@ -104,8 +108,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Gender</label>
+                    <label for="gender" class="block text-sm font-medium text-gray-700">Gender</label>
                     <select 
+                        id="gender"
                         bind:value={formData.gender} 
                         required 
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
@@ -118,8 +123,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Height (cm)</label>
+                    <label for="height" class="block text-sm font-medium text-gray-700">Height (cm)</label>
                     <input 
+                        id="height"
                         type="number" 
                         bind:value={formData.height} 
                         required 
@@ -128,8 +134,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Weight (kg)</label>
+                    <label for="weight" class="block text-sm font-medium text-gray-700">Weight (kg)</label>
                     <input 
+                        id="weight"
                         type="number" 
                         bind:value={formData.weight} 
                         required 
@@ -138,8 +145,9 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700">Blood Type</label>
+                    <label for="bloodType" class="block text-sm font-medium text-gray-700">Blood Type</label>
                     <select 
+                        id="bloodType"
                         bind:value={formData.bloodType} 
                         required 
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
@@ -158,18 +166,20 @@
             </div>
 
             <div class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Allergies</label>
+                <div></div>
+                    <label for="allergies" class="block text-sm font-medium text-gray-700">Allergies</label>
                     <textarea 
+                        id="allergies"
                         bind:value={formData.allergies} 
                         rows="3" 
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     ></textarea>
                 </div>
 
-                <div>
-                    <label class="block text-sm font-medium text-gray-700">Current Medications</label>
+                <div></div>
+                    <label for="medications" class="block text-sm font-medium text-gray-700">Current Medications</label>
                     <textarea 
+                        id="medications"
                         bind:value={formData.medications} 
                         rows="3" 
                         class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500"
